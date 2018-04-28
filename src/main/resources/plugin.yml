@@ -1,0 +1,49 @@
+name: TPlot
+version: 1.1.0-SNAPSHOT
+description: Plugin qui permet de créer des TPlot (parcelles) et d'y configurer des types (agriculture, élevage etc...)
+author: Dr_Titoune (Etienne WATTEBLED)
+main: fr.etienne.wattebled.LauncherTPlot
+depend: [WorldGuard, Vault, GroupManager]
+commands:
+    renommer:
+       description: Renomme une région.
+       permission: tplot.renommer
+       usage: /renommer <ancienNomRégion> <nouveauNomRégion>
+    permissions:
+       description: Liste les permissions utilisables sur les pancartes.
+       permission: tplot.permissions
+       usage: /permissions
+    quartiers:
+       description: Liste les quartiers
+       permission: tplot.quartiers
+       usage: /quartiers
+    types:
+       description: Liste les types
+       permission: tplot.types
+       usage: /types
+    villes:
+       description: Liste les villes
+       permission: tplot.villes
+       usage: /villes
+permissions:
+    tplot.acheter:
+        description: Permet d'acheter une TPlot (à condition d'avoir le grade nécessaire dans le fichier de config)
+        default: false
+    tplot.creer:
+        description: Permet de créer une TPlot
+        default: false
+    tplot.renommer:
+        description: Permet de renommer une région.
+        default: false
+    tplot.permissions:
+        description: Permet de lister les permissions utilisables sur les pancartes.
+        default: false
+    tplot.quartiers:
+        description: Permet de lister les quartiers;
+        default: false
+    tplot.types:
+        description: Permet de lister les types.
+        default: false
+    tplot.villes:
+        description: Permet de lister les villes
+        default: false
